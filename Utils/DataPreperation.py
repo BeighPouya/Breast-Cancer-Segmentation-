@@ -8,7 +8,7 @@ X = []
 y_MG = []
 y_EA = []
 names = []
-path = '../raw_data/'
+path = '../Data/raw data/'
 address_list = []
 for root, dirs, files in os.walk(path, topdown=False):
     if "US" in root:

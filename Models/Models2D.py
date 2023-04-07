@@ -1,8 +1,5 @@
 from tensorflow.keras.models import Model
-from tensorflow.keras.layers import Input, Conv2D, MaxPooling2D, UpSampling2D, concatenate, Conv2DTranspose, BatchNormalization, Dropout, Lambda
-from tensorflow.keras.optimizers import Adam
-from tensorflow.keras.layers import Activation, MaxPool2D, Concatenate
-
+from tensorflow.keras.layers import Input, Conv2D, MaxPool2D, UpSampling2D, Concatenate, Conv2DTranspose, BatchNormalization, Dropout, Lambda, Activation
 
 def conv_block(input, num_filters, batch_normalization=True):
     x = Conv2D(num_filters, 3, padding="same")(input)

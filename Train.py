@@ -19,13 +19,13 @@ model.compile(optimizer=Adam(learning_rate = 1e-4), loss=dice_loss, metrics=[dic
 model.summary()
 
 history = model.fit(X_train, y_train_combined,
-                    batch_size=16,
+                    batch_size=64,
                     verbose=1,
-                    epochs=40,
+                    epochs=1,
                     validation_split=0.05,
                     shuffle=False)
 
-model.save('128by128UNET32filters.hdf5')
+# model.save('128by128UNET32filters.hdf5')
 
 plt.plot(history.history['loss'])
 plt.plot(history.history['val_loss'])
