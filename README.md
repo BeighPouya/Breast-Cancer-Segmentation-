@@ -29,8 +29,8 @@ The data preparation is done in `DataPreparation.py` under the `utils` directory
 The `models/` directory contains implementation of 2D and 3D UNet architectures. Both implementations use a series of convolutional and pooling layers to downsample the input image, and then upsample it back to its original size. The difference between the 2D and 3D models is that the 3D model uses 3D convolutional layers instead of 2D convolutional layers.
 The `train.py` script is used for training the models. The script reads in the training and testing datasets created by the data preparation script, and trains the models using the specified hyperparameters. The script saves the trained models to the `models/trained_model/` directory, and also generates graphs of the training and testing processes, which are saved to the `results/graphs/` directory.
 <div>
-<img src="attachment:3cba0de0-5dfd-4bbc-9eca-fee06efb8608.png" width="450"/>
-<img src="attachment:27232ee9-3eff-48f5-8076-17e9a92d447f.png" width="450"/>
+<img src="Results/Screenshot 2023-04-01 at 5.36.48 PM.png" width="400"/>
+<img src="Results/Screenshot 2023-04-01 at 5.37.18 PM.png" width="400"/>
 </div>
 
 ## Results
@@ -45,7 +45,7 @@ Figure below shows the results of the segmentation on 4 random slices out of tes
 
 
 <div>
-<img src="attachment:afe1716e-48eb-444a-b6e7-43a3883e1425.png" width="900"/>
+<img src="Results/Screenshot 2023-04-01 at 5.37.50 PM.png" width="900"/>
 </div>
 
 Finally dice coefficient score of 92.77% was achieved on test set.
@@ -53,17 +53,20 @@ Finally dice coefficient score of 92.77% was achieved on test set.
 In this project, we successfully segmented breast cancer cells using the UNet architecture. We were able to achieve high accuracy on both the training and test sets. The use of data augmentation techniques helped to increase the size of the training set, which led to improved model performance.
 
 ## Usage
-To use this project, first, clone the repository:
+To use this project, follow these steps:
+
+1. Clone the repository to your local machine.
+2. Install the required dependencies.
+3. Run the DataPreparation.py script to prepare the data.
+4. Run the train.py script to train the model.
+5. View the graphs in the results/graphs directory to evaluate the training process.
+6. Use the trained model for breast cancer cell segmentation.
 
 ## Contributors
 - Pouya Beig heidari
 - Elina Rascevska
 
 ## Acknowledgments
-
-University of South Florida for providing the dataset
-    
-
 
 ```python
 
