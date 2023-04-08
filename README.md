@@ -29,8 +29,8 @@ The data preparation is done in `DataPreparation.py` under the `utils` directory
 The `models/` directory contains implementation of 2D and 3D UNet architectures. Both implementations use a series of convolutional and pooling layers to downsample the input image, and then upsample it back to its original size. The difference between the 2D and 3D models is that the 3D model uses 3D convolutional layers instead of 2D convolutional layers.
 The `train.py` script is used for training the models. The script reads in the training and testing datasets created by the data preparation script, and trains the models using the specified hyperparameters. The script saves the trained models to the `models/trained_model/` directory, and also generates graphs of the training and testing processes, which are saved to the `results/graphs/` directory.
 <div>
-<img src="Results/Screenshot 2023-04-01 at 5.36.48 PM.png" width="450"/>
-<img src="Results/Screenshot 2023-04-01 at 5.37.18 PM.png" width="450"/>
+<img src="Results/Screenshot 2023-04-01 at 5.36.48 PM.png" width="400"/>
+<img src="Results/Screenshot 2023-04-01 at 5.37.18 PM.png" width="400"/>
 </div>
 
 ## Results
@@ -45,7 +45,7 @@ Figure below shows the results of the segmentation on 4 random slices out of tes
 
 
 <div>
-<img src="PycharmProjects/Breast-Cancer-Segmentation/Results/Screenshot 2023-04-01 at 5.37.50 PM.png" width="900"/>
+<img src="Results/Screenshot 2023-04-01 at 5.37.50 PM.png" width="900"/>
 </div>
 
 Finally dice coefficient score of 92.77% was achieved on test set.
