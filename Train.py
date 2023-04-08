@@ -50,7 +50,6 @@ y_pred = model.predict(X_test)
 test_results = model.evaluate(X_test, y_test_combined, verbose=1)
 print(test_results)
 
-a=471
 fig, axes = plt.subplots(nrows=3, ncols=4, figsize=(20, 10))
 # Display the first image in the first subplot
 axes[0, 0].imshow(X_test[a], cmap='gray')

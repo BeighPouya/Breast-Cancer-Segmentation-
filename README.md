@@ -14,8 +14,8 @@ The proposed project aims to develop an automated tool for analyzing photoacoust
 The study utilized 54 3D images of freshly excised breast cancer ex-vivo specimens, which were sliced into multiple 2D images resulting in approximately 1080 2D US images. An example of the 2D US image of the ex-vivo breast cancer specimen can be seen in figure below. The ground truth for algorithm training was provided by human-guided segmentation, which was obtained from two different observers to address the variation in segmentation between users. The second figure shows the human segmented image. Due to the confidential nature of the patient information, only a few slices of the data were shown in the results section anonymously. As such, the complete dataset cannot be publicly shared.
 
 <div>
-<img src="attachment:5ccc72e7-8c55-4bfd-99ed-82380148d4a7.png" width="250"/>
-<img src="attachment:99c8c049-fad6-452d-943e-aefc5f717939.png" width="250"/>
+<img src="attachment:Results/Picture1.png" width="250"/>
+<img src="attachment:Results/Picture2.png" width="250"/>
 </div>
 
 ## Data Preparation

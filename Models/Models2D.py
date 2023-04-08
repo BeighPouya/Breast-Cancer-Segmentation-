@@ -6,16 +6,13 @@ def conv_block(input, num_filters, batch_normalization=True):
     if batch_normalization:
         x = BatchNormalization()(x)   #Not in the original network.
     x = Activation("relu")(x)
-
     x = Conv2D(num_filters, 3, padding="same")(x)
     if batch_normalization:
         x = BatchNormalization()(x)  #Not in the original network
     x = Activation("relu")(x)
-
     return x
 
 #Encoder block: Conv block followed by maxpooling
-
 
 def encoder_block(input, num_filters, batch_normalization):
     x = conv_block(input, num_filters, batch_normalization)
